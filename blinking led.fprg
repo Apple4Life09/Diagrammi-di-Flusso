@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="blinking led"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 09:48:44 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yNDsiMDk6Mjc6MzIgIjszODAx"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yNDsiMDk6NDg6NDQgIjsxOzM5MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="led, pin" type="Integer" array="False" size=""/>
+            <declare name="pinMode" type="String" array="False" size=""/>
+            <assign variable="led" expression="2"/>
+            <output expression="&quot;Dimmi il PIN che vuoi utilizzare&quot;" newline="True"/>
+            <input variable="pin"/>
+            <output expression="&quot;Dimmi la modalita del pin&quot;" newline="True"/>
+            <input variable="pinMode"/>
+            <while expression="1==1">
+                <output expression="&quot;led HIGH&quot;" newline="True"/>
+                <output expression="&quot;acceso per un secondo&quot;" newline="True"/>
+                <output expression="&quot;led LOW&quot;" newline="True"/>
+                <output expression="&quot;spento per un secondo&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

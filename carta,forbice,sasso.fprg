@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="carta,forbice,sasso"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-23 12:28:15 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMzsiMTI6MDc6MzIgIjszNzky"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMzsiMTI6Mjg6MTUgIjsxOzM5MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="scelta, computer" type="String" array="False" size=""/>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Scegli fra Carta, Forbice e Sasso&quot;" newline="True"/>
+            <input variable="scelta"/>
+            <assign variable="numero" expression="random(2)"/>
+            <if expression="numero==0">
+                <then>
+                    <assign variable="computer" expression="&quot;carta&quot;"/>
+                </then>
+                <else>
+                    <if expression="numero==1">
+                        <then>
+                            <assign variable="computer" expression="&quot;forbice&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="computer" expression="&quot;sasso&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="scelta==&quot;carta&quot; and computer==&quot;sasso&quot; or &#13;&#10;scelta==&quot;forbice&quot; and computer==&quot;carta&quot; or&#13;&#10;scelta==&quot;sasso&quot; and computer==&quot;forbice&quot;">
+                <then>
+                    <output expression="computer" newline="True"/>
+                    <output expression="&quot;Hai Vinto!!!!!!!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="scelta==&quot;carta&quot; and computer==&quot;carta&quot; or&#13;&#10;scelta==&quot;forbice&quot; and computer==&quot;forbice&quot; or&#13;&#10;scelta==&quot;sasso&quot; and computer==&quot;sasso&quot;">
+                        <then>
+                            <output expression="computer" newline="True"/>
+                            <output expression="&quot;Hai pareggiato!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="computer" newline="True"/>
+                            <output expression="&quot;Hai perso!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

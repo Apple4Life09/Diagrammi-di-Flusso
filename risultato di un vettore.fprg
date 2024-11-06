@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="risultato di un vettore"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 10:28:18 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMTsiMTA6MTg6MDMgIjszNzg4"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMTsiMTA6Mjg6MTggIjsxOzM5MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, risultato" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;dammi il numero del quale vuoi il fattoriale&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="risultato" expression="risultato*i"/>
+            </for>
+            <output expression="&quot;il fattoriale del numero scelto e:&quot;" newline="True"/>
+            <output expression="risultato" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

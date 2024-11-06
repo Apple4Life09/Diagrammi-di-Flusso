@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="blinking led"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 09:55:09 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yNDsiMDk6Mjc6MzIgIjszODAx"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yNDsiMDk6NTU6MDkgIjszOzM5MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="led, pushbutton" type="Integer" array="False" size=""/>
+            <declare name="pinMode1, pinMode2" type="String" array="False" size=""/>
+            <assign variable="led" expression="2"/>
+            <output expression="&quot;Dimmi il PIN che vuoi utilizzare&quot;" newline="True"/>
+            <input variable="led"/>
+            <output expression="&quot;Dimmi la modalita del pin&quot;" newline="True"/>
+            <input variable="pinMode1"/>
+            <output expression="&quot;Dimmi il PIN che vuoi utilizzare per il bottone&quot;" newline="True"/>
+            <input variable="pushbutton"/>
+            <output expression="&quot;Dimmi la modalita del pin del bottone&quot;" newline="True"/>
+            <input variable="pinMode2"/>
+            <while expression="1==1">
+                <output expression="&quot;led HIGH&quot;" newline="True"/>
+                <output expression="&quot;acceso per un secondo&quot;" newline="True"/>
+                <output expression="&quot;led LOW&quot;" newline="True"/>
+                <output expression="&quot;spento per un secondo&quot;" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

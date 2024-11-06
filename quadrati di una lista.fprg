@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vettori"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 10:17:25 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMTsiMTA6MDA6MTcgIjszNzg0"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0yMTsiMTA6MTc6MjUgIjsxOzM4OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista, quadrati" type="Integer" array="True" size="3"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dammi 3 numeri interi&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <input variable="lista[i]"/>
+            </for>
+            <output expression="&quot;calcolo il quadrato degli elementi della lista&quot;" newline="True"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <assign variable="quadrati[i]" expression="lista[i]^2"/>
+                <output expression="&quot;il quadrato di: &quot;" newline="False"/>
+                <output expression="lista[i]" newline="True"/>
+                <output expression="quadrati[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

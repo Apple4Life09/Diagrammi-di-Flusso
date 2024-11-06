@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="area del quadrato1"/>
+        <attribute name="authors" value="Niccol&#242; Dragoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 01:34:45 "/>
+        <attribute name="created" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0wOTsiMDE6MDU6MjAgIjszNzg5"/>
+        <attribute name="edited" value="TmljY29sw7IgRHJhZ29uaTtERVNLVE9QLVIwUTIyQ0E7MjAyNC0xMC0wOTsiMDE6MzQ6NDUgIjs0OzM5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l, A" type="Real" array="False" size=""/>
+            <output expression="&quot;Ciao, calcolo l'area di un quadrato. dammi il suo quadrato&quot;" newline="True"/>
+            <input variable="l"/>
+            <if expression="l&gt;0">
+                <then>
+                    <assign variable="A" expression="l^2"/>
+                    <output expression="&quot;l'area del quadrato &#232;: &quot;" newline="True"/>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;stronzo babbo dammi un lato maggiore di 0!!!!!!!!!!!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
